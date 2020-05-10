@@ -21,7 +21,7 @@ class App extends Component {
     if(this.props.reload){
       this.componentDidMount()
     }
-    if(this.props.error!==prevProps.error && this.props.error===false){
+    if(this.props.error!==prevProps.error && this.props.error){
       alert("Task has already been assigned in this time slot")
     }
     
