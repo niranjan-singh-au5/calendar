@@ -44,7 +44,7 @@ class App extends Component {
               <h3 className="text-info mt-3 ml-2">{this.props.date}</h3>
             <div className="row mt-4">
                 {this.props.cards.map((e,i)=>{
-                  return <div key="i" className="card-columns ml-2 ">
+                  return <div key="i" className="col-3 ml-2 ">
                     <Cards elem={e} index={i} />
                   </div>
                 })}

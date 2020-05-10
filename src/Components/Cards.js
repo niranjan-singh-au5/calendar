@@ -5,7 +5,7 @@ export class Cards extends Component {
     render() {
         return (
     
-            <div className="card border-info mb-3 border-0 " style={{"minHeight": "18rem", "maxHeight": "20rem","width":"15rem"}}>
+            <div className="card border-info mb-3 border-0 " style={{"minHeight": "18rem","width":"15rem"}}>
             <div className="card-header bg-transparent border-info text-center"><span className="float-left">{this.props.elem.time}</span><strong>{this.props.elem.title}</strong></div>
             <div className="card-body text-info">
             <h5 className="card-title">{this.props.elem.people.map((elem)=>{
