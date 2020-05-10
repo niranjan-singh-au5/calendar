@@ -13,7 +13,7 @@ export class Cards extends Component {
             })}</h5>
             <p className="card-text text-dark">{this.props.elem.info}</p>   
             </div>
-            <div className="card-footer bg-transparent border-info">Meeting Link: <a href={this.props.elem.link}  className="card-link">{this.props.elem.link}</a></div>
+            <div className="card-footer bg-transparent border-info">Meeting Link: <a href={this.props.elem.link}  className="card-link text-truncate">{this.props.elem.link}</a></div>
             </div>
         )
     }
