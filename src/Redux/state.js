@@ -27,7 +27,9 @@ function appReducer(state=initialState, action){
         case "error":
             newState.error = true
             return newState
-    
+        case "deleted":
+            newState.reload=true
+            return newState
     }
 }
 

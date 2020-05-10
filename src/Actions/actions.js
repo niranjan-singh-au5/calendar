@@ -54,3 +54,16 @@ export const loadCards = (date) => {
     }
 
 }
+
+export const deleteCard=(date,time)=>{
+    let req = axios.post(`https://calendarbyniranjan.herokuapp.com/delete`,{date:date, time:time})
+    return (dispatch)=> {
+        req.then((res) => {
+            if(res.data==="deleted"){
+                dispatch({
+                    type:"deleted"
+                })
+            }
+        })
+    }
+}
